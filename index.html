@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Mochiy+Pop+One&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81478abc59.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <h1 class="main-title">Tic Tac Toe</h1>
+
+    <div class="gamemode-container">
+        <form id="gamemodeForm">
+            <button type="submit" name="mode" value="single">Single Player</button>
+            <button type="submit" name="mode" value="multi">Multiplayer</button>  
+        </form>
+        <form id="namesForm" class="form-hide">
+            <div>
+                <label for="name1">First Player</label> <br>
+                <input type="text" id="name1" name="name1" autocomplete="off"> 
+            </div>
+            
+            <div>
+                <label for="name2">Second Player</label> <br>
+                <input type="text" id="name2" name="name2" autocomplete="off">
+            </div>
+            
+
+            <button type="submit">Start Game</button> 
+             
+        </form>
+    </div>
+
+    <section class="game">
+        <div class="game-container">
+        
+        </div>
+    
+        <div class="answer">
+            <p id="answer"></p>
+        </div>
+    
+        <div class="info">
+            <div class="player-info">
+                <p data-player="1">Player</p>
+                <h3 class="player-score">0</h3>
+            </div>
+            <button class="restart">Restart</button>
+            <div class="player-info">
+                <p data-player="2">Computer</p>
+                <h3 class="player-score">0</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 SrChezz <a href="https://github.com/SrChezz" class="icon fab fa-github"></a></p>
+    </footer>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
